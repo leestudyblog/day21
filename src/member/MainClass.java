@@ -21,15 +21,16 @@ public class MainClass {
 				name =sc.next();
 				//파일이 존재하면 true 아니면 false
 				if(ms.checkUser(name)) {
-					System.out.println("존재하는 파일입니다.");
+					System.out.println("존재하는 파일입니다."); //존재하면 프로그램 멈춤 
 					break;
 				}
 				
 				System.out.println("나이 :");
 				age=sc.nextInt();
 				dto=new MemberDTO();
-				dto.setName(name); dto.setAge(age);
-				ms.save(dto);
+				dto.setName(name); //dto에 사용자가 입력한 정보 삽입
+				dto.setAge(age);
+				ms.save(dto);// 입력한 데이터
 				break;
 			case 2: 
 				System.out.println("이름:");

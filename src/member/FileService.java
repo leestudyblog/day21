@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-public class FileService implements CommonService{//3 파일 추가
+public class FileService implements CommonService{//3 파일 추가 및 기능
 	private File path;
 	private FileOutputStream fos;
 	private BufferedOutputStream bos;
