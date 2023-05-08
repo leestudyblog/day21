@@ -11,7 +11,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
 public class FileService implements CommonService{//3 파일 추가
-	private File path ;
+	private File path;
 	private FileOutputStream fos;
 	private BufferedOutputStream bos;
 	private ObjectOutputStream oos;
@@ -44,7 +44,7 @@ public class FileService implements CommonService{//3 파일 추가
 		}
 	}
 	public boolean checkUser(String name) {
-	    path = new File (PATH +name +".txt");
+	    path = new File(PATH +name +".txt");
 		return path.exists();
 	}
 	

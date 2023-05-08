@@ -8,7 +8,7 @@ public class MainClass {
 		int num, age =0;
 		String name=null;
 		MemberDTO dto = null;
-		MemberService ms = null;
+		MemberService ms = new MemberService();
 		while(true) {
 			System.out.println("1.저장");
 			System.out.println("2.검색");
